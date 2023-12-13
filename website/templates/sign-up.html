@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% block title %} Sign Up {% endblock %} {% block
+content %}
+<!-- <h3 align="center">Sign up</h3>
+    <div class="form group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address">
+    </div> -->
+<br /><br />
+<h3 align="center">Sign Up</h3>
+<form method="POST">
+  <!-- email -->
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      aria-describedby="emailHelp"
+    />
+    <div id="emailHelp" class="form-text">
+      We'll never share your email with anyone else.
+    </div>
+  </div>
+  <!-- First Name -->
+  <div class="mb-3">
+    <label for="firstName" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="firstName" name="firstName" />
+  </div>
+
+  <!-- Lastname -->
+  <div class="mb-3">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="lastName" name="lastName" />
+  </div>
+
+  <!-- Password21 -->
+
+  <div class="mb-3">
+    <label for="password1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password1"
+      name="password1"
+    />
+  </div>
+
+  <!-- password 2 -->
+
+  <div class="mb-3">
+    <label for="password2" class="form-label">Confirm Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password2"
+      name="password2"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+{% endblock %}
